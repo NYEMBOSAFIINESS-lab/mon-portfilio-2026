@@ -228,5 +228,277 @@ footer a {
 footer a:hover {
     color: var(--orange-vif);
     transform: translateY(-3px);
+
+   }         
+
+   /* --- Page Projets --- */
+
+.projets-header {
+    text-align: center;
+    margin: 4rem 0 3rem;
 }
 
+.projets-header h1 {
+    font-size: 2.5rem;
+    color: var(--violet-fonce);
+}
+
+.underline {
+    width: 50px;
+    height: 4px;
+    background: var(--violet-doux);
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+.projets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    padding: 2rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projet-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.projet-card:hover {
+    transform: translateY(-10px);
+}
+
+.projet-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.projet-content {
+    padding: 1.5rem;
+}
+
+.projet-content h3 {
+    color: var(--violet-fonce);
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+}
+
+.projet-content p {
+    color: var(--gris-fonce);
+    font-size: 0.95rem;
+    margin-bottom: 1.2rem;
+    height: 60px; /* Aligne la hauteur des textes */
+    overflow: hidden;
+}
+
+/* Tags / Badges */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.tag {
+    background: #f0efff;
+    color: var(--violet-doux);
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 4px 12px;
+    border-radius: 20px;
+    border: 1px solid #e0deff;
+}
+
+/* Liens Bas de Carte */
+.projet-links {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+}
+
+.projet-links a {
+    text-decoration: none;
+    color: var(--gris-tres-Fonce);
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s;
+}
+
+.projet-links a:hover {
+    color: var(--violet-doux);
+}         
+
+/* --- Style commun pour les titres de sections --- */
+.projets-header {
+    text-align: center;
+    margin: 4rem 0 3rem;
+}
+
+.projets-header h1 {
+    font-size: 2.5rem;
+    color: var(--violet-fonce);
+    text-transform: capitalize;
+}
+
+.underline {
+    width: 60px;
+    height: 4px;
+    background: var(--violet-doux);
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+/* --- Grille et Cartes de Passions --- */
+.projets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    padding: 0 5% 6rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projet-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.projet-card:hover {
+    transform: translateY(-10px);
+}
+
+.projet-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.projet-content {
+    padding: 1.5rem;
+}
+
+.projet-content h3 {
+    color: var(--violet-fonce);
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+}
+
+.projet-content p {
+    color: var(--gris-fonce);
+    font-size: 0.95rem;
+    margin-bottom: 1.2rem;
+    line-height: 1.5;
+}
+
+/* Badges de passions */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    background: #f0efff;
+    color: var(--violet-doux);
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 4px 12px;
+    border-radius: 20px;
+    border: 1px solid #e0deff;
+}
+
+/* --- Mise en page globale Divertissement --- */
+
+.projets-header {
+    text-align: center;
+    margin: 4rem 0 3rem;
+}
+
+.projets-header h1 {
+    font-size: 2.5rem;
+    color: var(--violet-fonce);
+}
+
+.underline {
+    width: 60px;
+    height: 4px;
+    background: var(--violet-doux);
+    margin: 10px auto 2rem;
+    border-radius: 2px;
+}
+
+.projets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    padding: 0 5% 6rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projet-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projet-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.projet-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.projet-content {
+    padding: 1.5rem;
+    text-align: left;
+}
+
+.projet-content h3 {
+    color: var(--violet-fonce);
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+}
+
+.projet-content p {
+    color: var(--gris-fonce);
+    font-size: 0.95rem;
+    margin-bottom: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Badges / Tags */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    background: #f0efff;
+    color: var(--violet-doux);
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 4px 12px;
+    border-radius: 20px;
+    border: 1px solid #e0deff;
+}
